@@ -2,7 +2,7 @@
 import Home from './components/home/Home';
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Room from './components/room/Room';
+
 import JoinRoom from './components/room/JoinRoom';
 
 function App() {
