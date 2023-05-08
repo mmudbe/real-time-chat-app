@@ -17,7 +17,7 @@ export default function JoinRoom() {
     setRoomId(roomIdParam);
 
     // establish socket connection when component mounts
-    const newSocket = io("https://real-time-chat-app-psi.vercel.app" )
+    const newSocket = io("http://localhost:5000" || "https://real-time-chat-app-psi.vercel.app/")
 
     setSocket(newSocket);
 

@@ -17,7 +17,7 @@ app.use(cors());
 const httpServer = createServer(app);
 const io = new Server(httpServer,{
    cors: {
-     origin: ["https://real-time-chat-app-mmudbe.vercel.app"],
+     origin: ["https://real-time-chat-app-mmudbe.vercel.app/", "http://localhost:3000"],
      methods: ["GET","POST"]
    }
  });
