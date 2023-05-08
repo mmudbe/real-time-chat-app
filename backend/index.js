@@ -25,25 +25,15 @@ const io = new Server(httpServer,{
 
 
 // set the view engine to ejs
-app.set('view engine', 'ejs');
 
-app.get("/", (req,res) => {
-res.render("home");
-// console.log(req);
-});
+
+
 
 app.get("/room-id" , (req,res)=> {
  let roomID = uuid.v4();
  return res.status(200).send({"roomId":roomID});
 })
 
-app.get("/room",(req , res) => {
-// console.log(req.query.roomId);
-
- res.render("room");
-//  console.log(req.query);
- 
-})
 
 
 
